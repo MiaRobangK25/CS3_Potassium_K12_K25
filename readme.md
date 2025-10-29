@@ -8,7 +8,9 @@
 ![MotionNotion](MotionNotion.png)
 
 ## 4. Short Description
-- Our website aims to help gather materials, and introduce the *World of Debate* to our younger batches! As proud Invictus Debaters (PSHS-MC's own Speech & Debate Club), we wanted to make the process of learning how to debate, and becoming better at it much easier for everyone else. With that being said, there are many different aspects to debate that YOU must know, that take a lot of time to find out for youself. We want to use our CS3 Project to show you the beauty of debate, and gain your confidence even as a complete beginner to *Debate Land* in the Philippine Debate Circuit! 
+       Our website aims to help gather materials and introduce the *World of Debate* to our younger batches! As proud Invictus Debaters (PSHS-MC's own Speech & Debate Club), we wanted to make the process of learning how to debate and improving at it easier for everyone else. 
+
+       With that being said, there are many different aspects to debate that YOU must know, which takes much time to find out for yourself. We want to use our CS3 Project to show you the beauty of debate, and gain your confidence even as a complete beginner to *Debate Land* in the Philippine Debate Circuit! 
 
 -  `The world of debate, brought closer to you ;)`
 
@@ -18,7 +20,7 @@
 - This is where the SHORT DESCRIPTION will be added. 
 
 2. **Introduction**
-- `For this section, we want to quickly introduce the visitor of our site to debate! Debate manifests in many different forms, is has most likely been a term used to refer to "educational discussions". What we aim to do in the introduction is...
+- For this section, we want to quickly introduce the visitor of our site to debate! Debate manifests in many different forms, is has most likely been a term used to refer to "educational discussions". What we aim to do in the introduction is...
 > A. Explain what the Philippine Debate Circuit is like, especially because the two most popular formats used in this community is ASIAN PARLIAMENTARY (3v3) and BRITISH PARLIAMENTARY (2v2v2v2) with different formats. Basically, it is a team of 3 versus another 3-- or 4 teams made up of pairs in one debate. 
 
 > B. We want to also explain what debate is like. There is a side FOR the motion, and a side AGAINST the motion. These sides are referred to as PROPOSITION/GOVERNMENT and OPPOSITION respectively. Both sides will also have a set amount of PREPARATION TIME (Prep Time) to create their case why they are FOR or AGAINST the motion.
@@ -70,4 +72,4 @@
 > B. `Time Keeper` - The method inwhich we want to incorporate Javascript is specifically in this home page. We saw the timer Sir Roy made and use for his classes... and we were inspired (and want to learn how to do the same)!
 
 ## 7. Initial Wireframe, Navigation Bar & Footer
-- It can be found through THIS LINK: 
+- It can be found through THIS LINK: **[Our Initial Wireframe will the other 2 parts](https://www.canva.com/design/DAG3LE99WS8/998p1OJ0SGgxVwIIIFOBWg/edit)**
