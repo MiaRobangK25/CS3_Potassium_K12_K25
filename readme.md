@@ -69,7 +69,7 @@
 
 > A. `Neatly Switching Tabs/Refreshing Content` - Mia (Amelia Robang) used this in one of her Graded Excercises, but this was mainly to ensure that all of the content in each website page are not in one continuous page only. This will make it so that if we want to incorporate animations & such-- it will be much easier to sort through the pages & how it will be done through JavaScript. 
 
-> B. `Time Keeper` - The method inwhich we want to incorporate Javascript is specifically in this home page. We saw the timer Sir Roy made and use for his classes... and we were inspired (and want to learn how to do the same)!
+> B. `Time Keeper` - The method inwhich we want to incorporate Javascript is specifically in this home page. We saw the timer Sir Roy made and use for his classes... and we were inspired (and want to learn how to do the same)! This will basicialy be a timer & a stopwatch, that can be reset or used separately-- which we hope can be coded or timed by Javascript. 
 
 ## 7. Initial Wireframe, Navigation Bar & Footer
 - It can be found through THIS LINK: **[Our Initial Wireframe will the other 2 parts](https://www.canva.com/design/DAG3LE99WS8/998p1OJ0SGgxVwIIIFOBWg/edit)**
