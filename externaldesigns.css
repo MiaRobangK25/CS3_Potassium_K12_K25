@@ -35,6 +35,20 @@
 }
 
 body {
-  padding-top: 60px; 
+  padding-top: 50px; 
 }
 
+.page {
+  display: flex;         
+  align-items: flex-start;
+}
+
+.content {
+  flex: 1;            
+  margin-right: 20px;
+}
+
+.right-menu {
+  width: 1000px;        
+  position: sticky;                       
+}
