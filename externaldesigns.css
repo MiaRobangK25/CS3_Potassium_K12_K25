@@ -52,3 +52,21 @@ body {
   width: 1000px;        
   position: sticky;                       
 }
+
+
+.bottom-box p {
+  margin: 0;
+  font-size: 15px;
+}
+
+.bottom-box {
+  background-color: #432715;
+  padding: 10px 0;
+}
+
+.bottom-link {
+  display: block;
+  text-decoration: none;
+  color: rgb(252, 242, 202);
+  font-size: 14px;
+}
