@@ -70,3 +70,10 @@ body {
   color: rgb(252, 242, 202);
   font-size: 14px;
 }
+
+.navbar a.active {
+  color: #fff5e0;
+  background-color: #b3784d;
+  padding: 8px 15px;
+  border-radius: 8px;
+}
