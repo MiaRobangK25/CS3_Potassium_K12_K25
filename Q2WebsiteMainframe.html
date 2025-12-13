@@ -119,16 +119,22 @@
 
     <!--JAVASCRIPT-->
     <script>
-
+        // let's quickly explain the JS HERE, in this main page 
         function settingActivePage()
         {
             var links = document.querySelectorAll(".navbar a");
+            // get all navbar links, and input it into this variable
             var page = window.location.pathname.split("/").pop();
+            // window.location.pathname gives the path so it can map all the content inside correctly
+            // split spliits it, so we can put it into an array
+            // pop fixes the order in the array
             
+            // cycles through the names to add/remove the active status 
             for (i=0; i<links.length; i++)
             {
                 links[i].classList.remove("active"); 
                 
+                //.getAttribute is targetting the file's link
                 if ((links[i].getAttribute("href") === page) || (page === "" && links[i].getAttribute("href") === "Q2WebsiteMainframe.html"))
                 {
                     links[i].classList.add("active"); 
@@ -136,6 +142,7 @@
             }
         }
 
+        // runs the function
         window.onload = settingActivePage(); 
 
     </script>
