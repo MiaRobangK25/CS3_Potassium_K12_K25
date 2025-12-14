@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>Time Keeper</title>
     <link rel="icon" type="image/png" href="MotionNotion.png">
-    <link rel="stylesheet" href="externaldesigns.css">
+    <link rel="stylesheet" href="externaldesigns.css"> 
     <style>
     
         body
@@ -38,44 +38,37 @@
     <!-- NAVBAR -->
 
     <!-- PAGE CONTENT -->
+     <h1 id="container">Timer & Stopwatch</h1>
     <div class="content">
-        <h1>Page Title Here</h1>
-        <p>Write your page’s content here.</p>
+        <div id = "display"> 
+            00:00
+        </div>
+        <div id="buttons">
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+            <button id="reset">Reset</button>
+        </div>
     </div>
+
+    <!--JAVASCRIPT-->
+    <script src="externalPage2.js"> </script>
+    <!--JAVASCRIPT-->
 
     <!--FOOTER-->
     <a href="sources.html" class="bottom-link">
         <div class="bottom-box">
-          <p>© 2025 Motion Notion. COPYRIGHT © ROBANG, FESTEJO & SOURCES. All rights reserved.</p>
+          <p>© 2025 Motion Notion. COPYRIGHT © ROBANG, FESTEJO & SOURCES. All rights reserved.</p> <sources>
+          <p>Sources:</p>
+          <p>Bro Code. (2023, December 17). Build this stopwatch with JavaScript! ⏱ [Video]. YouTube. https://www.youtube.com/watch?v=d8-LGhKtzRw</p>
+          <p>GeeksforGeeks. (2025, June 19). How to Create Stopwatch using HTML CSS and JavaScript ? GeeksforGeeks. https://www.geeksforgeeks.org/javascript/how-to-create-stopwatch-using-html-css-and-javascript/</p>
+         
         </div>
     </a>
     <!--FOOTER-->
 
     <!-- PAGE CONTENT -->
 
-    <!--JAVASCRIPT-->
-    <script>
 
-        function settingActivePage()
-        {
-            var links = document.querySelectorAll(".navbar a");
-            var page = window.location.pathname.split("/").pop();
-            
-            for (i=0; i<links.length; i++)
-            {
-                links[i].classList.remove("active"); 
-                
-                if ((links[i].getAttribute("href") === page) || (page === "" && links[i].getAttribute("href") === "Q2WebsiteMainframe.html"))
-                {
-                    links[i].classList.add("active"); 
-                }
-            }
-        }
-
-        window.onload = settingActivePage(); 
-
-    </script>
-    <!--JAVASCRIPT-->
 
 </body>
 </html>

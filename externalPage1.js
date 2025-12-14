@@ -1,3 +1,5 @@
+        // External JS file for page identification & display (Page 1)
+        
         function settingActivePage()
         {
             var links = document.querySelectorAll(".navbar a");
