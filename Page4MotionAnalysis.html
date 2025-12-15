@@ -19,9 +19,117 @@
                 background-position: center 60%;
                 background-size: cover;
             }
-    
-        </style>
 
+        h1 { 
+            transform : translate(40px, 0px);
+            font-family : "Arial", Verdana, Helvetica;
+            font-weight: 40%;
+            font-size : 90px;
+            color : white;
+            padding : 0%;
+            margin: 0%;
+
+            
+        }
+
+        p {
+            transform : translate(40px, 0px);
+            font-family: "Arial", Verdana, Helvetica;
+            font-size: 20px;
+            color: rgb(255, 248, 222);
+            padding: 5px;
+            line-height : 1.6;
+            width : 650px;
+        }
+
+
+        table {
+            border-collapse: collapse;
+            width: 500px;
+            table-layout: auto;
+            background-color: #725309;
+            border-color : #725309;
+            font-family: "Arial", Verdana, Helvetica;
+            font-size : 20px;
+            border-radius : 40px;
+            color:rgb(228, 206, 133);
+            overflow : hidden;
+            transform : translate(40px, 0px);
+        }
+
+        td, th {
+            border: none;
+            background-color : #725309;
+            border-spacing: 10px;
+            text-align: center;
+            padding: 15px;
+            font-family: "Arial", Verdana, Helvetica;
+        }
+
+        img {
+            width: 90px;
+            height: 90px;
+            border-radius : 50%;
+        }
+
+        .right-menu {
+            transform: translate(90px, 70px);
+            padding: 30px;
+        }
+
+        .content {
+             transform : translate(50px, 0px);
+        }
+
+        h2 
+        {
+            padding: 15px 20px;          
+            margin-left: 40px;             
+            margin-bottom: 10px;           
+            background-color: #604c1cd2;     
+            color: rgb(235, 227, 187);     
+            font-family: "Arial", Verdana, Helvetica;
+            cursor: pointer;              
+            border-radius: 12px;           
+            transition: background 0.3s;   
+        }
+
+
+        h2:hover 
+        {
+            background-color: #876b2e;  
+        }
+
+
+        .toggle-content 
+        {
+            display: none; 
+            padding-left: 20px;
+        }
+
+        .toggle 
+        {
+            cursor: pointer; 
+            width: 500px;
+            text-align: center;
+        }
+
+        .right-menu table 
+        {
+            margin-bottom: 90px; 
+        }
+
+        .content-right {
+            transform : translate(700px, 0px);
+        }
+
+        .column {
+            font-size: 25px;
+            row-gap: 40px;
+            color:rgb(252, 242, 202);
+        }
+
+        </style>
 </head>
 
 <body>
@@ -42,7 +150,68 @@
     <!-- PAGE CONTENT -->
     <div class="content">
         <h1>Motion Analysis</h1>
-        <p>Write your page’s content here.</p>
+            <h2 class="toggle">This House Would</h2>
+            <div class="toggle-content">
+                <p>
+                    
+                </p>
+            </div>
+
+            <h2 class="toggle">This House Believes that X should</h2>
+            <div class="toggle-content">
+                <p>
+                     
+                </p>
+            </div>
+
+            <h2 class="toggle">This House Believes That</h2>
+            <div class="toggle-content">
+                <p>
+
+                </p>             
+            </div>
+
+            <h2 class="toggle">This House Supports/Opposes</h2>
+            <div class="toggle-content">
+                <p>
+                    
+                </p>
+            </div>
+            
+            <h2 class="toggle">This House Prefers</h2>
+            <div class="toggle-content">
+                <p>
+                    
+                </p>
+            </div>
+
+            <h2 class="toggle">This House Would</h2>
+            <div class="toggle-content">
+                <p>
+                    
+                </p>
+            </div>
+
+            <h2 class="toggle">This House Prefers a world in which</h2>
+            <div class="toggle-content">
+                <p>
+                    
+                </p>
+            </div>
+
+            <h2 class="toggle">This House Regrets</h2>
+            <div class="toggle-content">
+                <p>
+                    
+                </p>
+            </div>
+
+            <h2 class="toggle">This House Predicts</h2>
+            <div class="toggle-content">
+                <p>
+                    
+                </p>
+            </div>
     </div>
 
     <!--FOOTER-->

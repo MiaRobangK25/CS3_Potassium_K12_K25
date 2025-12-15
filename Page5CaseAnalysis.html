@@ -18,8 +18,65 @@
             background-position: center 55%;
             background-size: cover;
         }
-        </style>
 
+                h1 { 
+        transform : translate(30px, 10px);
+        font-family : "Arial", Verdana, Helvetica;;
+        font-size : 114px;
+        color : white;
+        padding : 0px;
+        margin : 0px;
+        line-height: 0.9;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 500px;
+            table-layout: auto;
+            background-color: #725309;
+            border-color : #725309;
+            font-family : "Arial", Verdana, Helvetica;
+            font-size : 20px;
+            border-radius : 40px;
+            color:rgb(228, 206, 133);
+            overflow : hidden;
+            transform : translate(40px, 10px);
+            padding-top: 10px;
+        }
+
+        td, th {
+            border: none;
+            background-color : #725309;
+            border-spacing: 10px;
+            text-align: left;
+            padding: 15px;
+            font-family: "Arial", Verdana, Helvetica;
+        }
+
+        p {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 38px;
+            padding-right: 38px;
+            font-family : "Arial", Verdana, Helvetica;
+            font-size : 25px;
+            color:rgb(252, 242, 202);
+        }
+
+        .content { 
+            width : 800px;
+            translate: (50px, 0px);
+        }
+        .shadow {
+            box-shadow: 2px 2px 4px #4f3405;
+            border : 1px solid rgb(77, 49, 10);
+        }
+        .column {
+            font-size: 25px;
+            row-gap: 40px;
+            color:rgb(252, 242, 202);
+        }
+        </style>
 </head>
 
 <body>
@@ -40,7 +97,39 @@
     <!-- PAGE CONTENT -->
     <div class="content">
         <h1>Case Analysis</h1>
-        <p>Write your page’s content here.</p>
+
+        <table class="shadow">
+            <tr>
+                <th><b>MOTION: </b></th>
+            </tr>
+            <tr>
+                <th><b>SIDE: </b></th>
+            </tr>
+            <tr>
+                <th><b>Debate Format: </b></th>
+            </tr>
+        </table>
+
+        <p><b>Intro: </p>
+        <p><b>Framing/Set-up: </b>
+            <ul class = "column">
+                <li>Important Details</li>
+            </ul>
+        </p>
+        <p><b>Argument 1:</b>
+            <ul class = "column">
+                <li>Pre-framing</li>
+                <li>Reasons</li>
+                <li >Impacts</li>
+                <li >Weighing</li>
+            </ul>
+        </p>
+
+
+        <p style="font-family: 'Times New Roman';">
+            <i> – [Batch 2029] Amelia S. Robang & Pio D. Festejo</i>
+        </p>
+    </div>
     </div>
 
     <!--FOOTER-->
