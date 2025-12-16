@@ -7,88 +7,92 @@
     <link rel="stylesheet" href="externaldesigns.css">
     
     <style>
-    
-        body
-            {
-                background-image: 
-                    linear-gradient(rgba(107, 73, 34, 0.53), rgba(0, 0, 0, 0.3)),
-                    linear-gradient(to left, rgba(195, 128, 51, 0.271), rgba(43, 22, 8, 0.714)), 
-                    url('PSDC25Contingent.jpg'); 
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                background-position: 20%;
-                background-size: cover;
-            }
-
-        h1 { 
-            transform : translate(40px, 0px);
-            font-family : "Arial", Verdana, Helvetica;
-            font-weight: 40%;
-            font-size : 90px;
-            color : white;
-            padding : 0%;
-            margin: 0%;
-
-            
+        body 
+        {
+            background-image:
+                linear-gradient(rgba(107, 73, 34, 0.53), rgba(0, 0, 0, 0.3)),
+                linear-gradient(to left, rgba(195, 128, 51, 0.271), rgba(43, 22, 8, 0.714)),
+                url('SpeakUP last day.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center 55%;
+            background-size: cover;
         }
 
-        p {
-            transform : translate(40px, 0px);
-            font-family: "Arial", Verdana, Helvetica;
-            font-size: 20px;
-            color: rgb(255, 248, 222);
-            padding: 5px;
-            line-height : 1.6;
-            width : 650px;
+                h1 { 
+        transform : translate(30px, 10px);
+        font-family : "Arial", Verdana, Helvetica;;
+        font-size : 114px;
+        color : white;
+        padding : 0px;
+        margin : 0px;
+        line-height: 0.9;
         }
-
 
         table {
             border-collapse: collapse;
             width: 500px;
             table-layout: auto;
             background-color: #725309;
-            border: solid black 2px;
-            font-family: "Arial", Verdana, Helvetica;
+            border-color : black;
+            font-family : "Arial", Verdana, Helvetica;
             font-size : 20px;
             border-radius : 40px;
             color:rgb(228, 206, 133);
             overflow : hidden;
-            transform : translate(40px, 0px);
-            margin-bottom: 90px;
-            margin-left: 400px;
-            margin-right: 450px;
+            transform : translate(40px, 10px);
+            padding-top: 30px;
         }
 
         td, th {
             border: none;
             background-color : #725309;
             border-spacing: 10px;
-            text-align: center;
+            text-align: left;
             padding: 15px;
             font-family: "Arial", Verdana, Helvetica;
         }
 
-        img {
-            width: 90px;
-            height: 90px;
-            border-radius : 50%;
+        p {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 38px;
+            padding-right: 38px;
+            font-family : "Arial", Verdana, Helvetica;
+            font-size : 25px;
+            color:rgb(252, 242, 202);
         }
 
-        .right-menu {
+        .content { 
+            width : 800px;
+            translate: (50px, 0px);
+        }
+        .shadow {
+            box-shadow: 2px 2px 4px #4f3405;
+            border : 1px solid rgb(77, 49, 10);
+        }
+        .column {
+            font-size: 25px;
+            row-gap: 40px;
+            color:rgb(252, 242, 202);
+        }
+
+        img {
+            width: 300px;
+            height: 450px;
+            border-radius: 45px;
+        }
+
+                .right-menu {
             transform: translate(90px, 70px);
             padding: 30px;
-        }
-
-        .content {
-             transform : translate(50px, 0px);
         }
 
         h2 
         {
             padding: 15px 20px;          
             margin-left: 40px;             
-            margin-bottom: 10px;           
+            margin-bottom: 30px;           
             background-color: #604c1cd2;     
             color: rgb(235, 227, 187);     
             font-family: "Arial", Verdana, Helvetica;
@@ -108,6 +112,7 @@
         {
             display: none; 
             padding-left: 20px;
+
         }
 
         .toggle 
@@ -115,20 +120,17 @@
             cursor: pointer; 
             width: 500px;
             text-align: center;
+            translate:(50px,0px);
         }
 
         .right-menu table 
         {
             margin-bottom: 90px; 
-        }    
-
-        .sub-navbar {
-            margin-top: 20px;
-            margin-left: 40px;
-            margin-bottom: 20px;
-            color: rgb(235, 227, 187);
         }
 
+        img:hover {
+        transform: scale(1.1);
+        }
         </style>
 
 </head>
@@ -151,17 +153,44 @@
     <!-- PAGE CONTENT -->
     <div class="content">
         <h1>Speaker Roles</h1>
-        <p><b>In debate, there are two main formats, Asian & British Parliamentary</b></p>
+        <p style="margin:50px;"><b>In debate, there are two main formats, Asian & British Parliamentary</b></p>
 
+            <h2 class="toggle">PM & LO</h2>
+                <div class="toggle-content">
+                    <p>
+                        Presents & highlights framing and arguments from their respective bench.
+                    </p>
+                </div>
 
+                <h2 class="toggle">DPM & DLO</h2>
+            <div class="toggle-content">
+                <p>
+                    Replies to the opponents’ arguments & extends their bench’s arguments.
+                </p>
+            </div>
 
-        <div class="sub-navbar">
-            <nav class="sub-navbar">
-            <ul>
-            <li><a href="Page3AP.html">Asian Parliamentary</a></li>
-            <li><a href="Page3BP.html">British Parliamentary</a></li>
-            </ul>
-            </nav>
+                <h2 class="toggle">The Member</h2>
+            <div class="toggle-content">
+                <p>
+                    Reply to the opponents’ arguments & rebuttals. Presents new arguments.
+                </p>
+            </div>
+
+                <h2 class="toggle">The Whip</h2>
+            <div class="toggle-content">
+                <p>
+                    Summarizes their side’s arguments and compares them to the opponents’.
+                </p>
+            </div>
+            
+            <p style="margin:50px;"><b>Both formats allot 7 minutes & 15 seconds for speakers to deliver their speeches</b></p>
+
+            <img src="BritishParliamentary.png" style="width:550px;height:400px;align-content: center;margin-top:50px;margin-left:750px">
+            <img src="AsianParliamentary.png" style="width:550px;height:400px;align-content: center;margin-top:50px;margin-left:750px">
+
+            <p style="font-family: 'Times New Roman';">
+                <i> – [Batch 2029] Amelia S. Robang & Pio D. Festejo</i>
+            </p>
         </div>
     </div>
 
