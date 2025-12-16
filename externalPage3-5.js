@@ -17,3 +17,22 @@
         }
 
         window.onload = settingActivePage(); 
+
+        var headings = document.getElementsByClassName('toggle');
+
+        for (var i = 0; i < headings.length; i++) 
+        {
+            headings[i].onclick = function() 
+            {
+                var content = this.nextElementSibling;
+            
+                if (content.style.display === 'none') 
+                {
+                    content.style.display = 'block';
+                } 
+                else 
+                {
+                    content.style.display = 'none';
+                }
+            }
+        }
