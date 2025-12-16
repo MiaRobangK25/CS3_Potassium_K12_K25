@@ -7,20 +7,36 @@
     <link rel="stylesheet" href="externaldesigns.css"> 
     <style>
     
-        body
-            {
-                background-image: 
-                    linear-gradient(rgba(107, 73, 34, 0.53), rgba(0, 0, 0, 0.3)),
-                    linear-gradient(to left, rgba(195, 128, 51, 0.271), rgba(43, 22, 8, 0.714)), 
-                    url('PSDC2026Neverland.jpg'); 
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                background-position: center center;
-                background-size: cover;
-            }
+        body 
+        {
+            margin: 0;
+            padding-top: 60px;
+            font-family: Arial, sans-serif;
+            position: relative;
+            overflow: hidden;
+        }
+
+
+        body::before 
+        {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+            linear-gradient(rgba(107, 73, 34, 0.53), rgba(0, 0, 0, 0.3)),
+            linear-gradient(to left, rgba(195, 128, 51, 0.271), rgba(43, 22, 8, 0.714)),
+            url('PSDC2026Neverland.jpg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            filter: blur(4px);  
+            z-index: -1; 
+        }
     
         h1 { 
-            transform : translate(40px, 0px);
             font-family : "Arial", Verdana, Helvetica;
             font-weight: 40%;
             font-size : 90px;

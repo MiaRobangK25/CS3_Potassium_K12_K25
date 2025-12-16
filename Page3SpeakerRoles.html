@@ -7,16 +7,34 @@
     <link rel="stylesheet" href="externaldesigns.css">
     
     <style>
+
         body 
         {
+            margin: 0;
+            padding-top: 60px; 
+            font-family: Arial, sans-serif;
+            position: relative;
+            overflow: hidden;
+        }
+
+        body::before 
+        {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             background-image:
-                linear-gradient(rgba(107, 73, 34, 0.53), rgba(0, 0, 0, 0.3)),
-                linear-gradient(to left, rgba(195, 128, 51, 0.271), rgba(43, 22, 8, 0.714)),
-                url('SpeakUP last day.jpg');
+            linear-gradient(rgba(65, 43, 18, 0.646), rgba(0, 0, 0, 0.3)),
+            linear-gradient(to left, rgba(138, 87, 29, 0.568), rgba(43, 22, 8, 0.714)),
+            url('SpeakUP last day.jpg');
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: center 55%;
             background-size: cover;
+            filter: blur(4px); 
+            z-index: -1;  
         }
 
                 h1 { 
@@ -152,6 +170,9 @@
 
     <!-- PAGE CONTENT -->
     <div class="content">
+
+        <br/>
+
         <h1>Speaker Roles</h1>
         <p><b>In debate, there are two main formats, Asian & British Parliamentary</b></p>
 
