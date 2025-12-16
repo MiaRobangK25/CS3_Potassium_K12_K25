@@ -19,7 +19,116 @@
                 background-position: 20%;
                 background-size: cover;
             }
-    
+
+        h1 { 
+            transform : translate(40px, 0px);
+            font-family : "Arial", Verdana, Helvetica;
+            font-weight: 40%;
+            font-size : 90px;
+            color : white;
+            padding : 0%;
+            margin: 0%;
+
+            
+        }
+
+        p {
+            transform : translate(40px, 0px);
+            font-family: "Arial", Verdana, Helvetica;
+            font-size: 20px;
+            color: rgb(255, 248, 222);
+            padding: 5px;
+            line-height : 1.6;
+            width : 650px;
+        }
+
+
+        table {
+            border-collapse: collapse;
+            width: 500px;
+            table-layout: auto;
+            background-color: #725309;
+            border: solid black 2px;
+            font-family: "Arial", Verdana, Helvetica;
+            font-size : 20px;
+            border-radius : 40px;
+            color:rgb(228, 206, 133);
+            overflow : hidden;
+            transform : translate(40px, 0px);
+            margin-bottom: 90px;
+            margin-left: 400px;
+            margin-right: 450px;
+        }
+
+        td, th {
+            border: none;
+            background-color : #725309;
+            border-spacing: 10px;
+            text-align: center;
+            padding: 15px;
+            font-family: "Arial", Verdana, Helvetica;
+        }
+
+        img {
+            width: 90px;
+            height: 90px;
+            border-radius : 50%;
+        }
+
+        .right-menu {
+            transform: translate(90px, 70px);
+            padding: 30px;
+        }
+
+        .content {
+             transform : translate(50px, 0px);
+        }
+
+        h2 
+        {
+            padding: 15px 20px;          
+            margin-left: 40px;             
+            margin-bottom: 10px;           
+            background-color: #604c1cd2;     
+            color: rgb(235, 227, 187);     
+            font-family: "Arial", Verdana, Helvetica;
+            cursor: pointer;              
+            border-radius: 12px;           
+            transition: background 0.3s;   
+        }
+
+
+        h2:hover 
+        {
+            background-color: #876b2e;  
+        }
+
+
+        .toggle-content 
+        {
+            display: none; 
+            padding-left: 20px;
+        }
+
+        .toggle 
+        {
+            cursor: pointer; 
+            width: 500px;
+            text-align: center;
+        }
+
+        .right-menu table 
+        {
+            margin-bottom: 90px; 
+        }    
+
+        .sub-navbar {
+            margin-top: 20px;
+            margin-left: 40px;
+            margin-bottom: 20px;
+            color: rgb(235, 227, 187);
+        }
+
         </style>
 
 </head>
@@ -41,8 +150,19 @@
 
     <!-- PAGE CONTENT -->
     <div class="content">
-        <h1>Page Title Here</h1>
-        <p>Write your page’s content here.</p>
+        <h1>Speaker Roles</h1>
+        <p><b>In debate, there are two main formats, Asian & British Parliamentary</b></p>
+
+
+
+        <div class="sub-navbar">
+            <nav class="sub-navbar">
+            <ul>
+            <li><a href="Page3AP.html">Asian Parliamentary</a></li>
+            <li><a href="Page3BP.html">British Parliamentary</a></li>
+            </ul>
+            </nav>
+        </div>
     </div>
 
     <!--FOOTER-->
