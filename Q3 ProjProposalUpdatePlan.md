@@ -22,7 +22,7 @@
 
 > A.`ADDITION to the TENTATIVE PAGE` - *Change in formatting (HTML & CSS)* of how people can use this page, and how the short description will be placed. 
 
-> B. `ADDITION to the TENTATIVE PAGE` - We hope to make the *timer & stopwatch feature that will be provided fully functioning*. These can be set to different limits depending on their preference, using JavaScript. 
+> B. `ADDITION to the TENTATIVE PAGE` - We hope to make the *timer & stopwatch feature that will be provided fully functioning*. These can be set to different limits depending on their preference, using JavaScript. Unless we run into issues-- we will make it as functionable as possible. 
 
 ### 4. **Speaker Roles**
 - This will mainly stay the same as the Initial Project Proposal. This is where all of the other details and necessary information about the different roles debaters may have in a debate. 
@@ -65,10 +65,9 @@
 
 *`FLAG: The same goes for the rest of the pages, so we will double check once we submit our website again!`*
 
-### 2. **All dropboxes, clickable features, animations should work**
-- This means that all of the information should be accessible, and visible when interacted with. This includes any animations or other features (i.e. hovering over certain text). 
+### 2. **All featurs: dropboxes, clickable features, animations should work**
+- This means that all of the information should be accessible, and visible when interacted with. This includes any animations or other features (i.e. hovering over certain text). By extension, this also includes the timer in the TimeKeeper page. 
 
 ### 3. **The format/flow of the website (and its' content) should be coherent**
-- There shouldn't be any information scattered about the website. It should be consistent for each page, and 
-
-### 4. ****
+- There shouldn't be any information scattered about the website. It should be consistent for each page, easy to follow, and understand. 
+- The overall flow/look of the website should also be evaluated! Whether or not it looks complete, should also be considered when graded (since we strayed away from the original aesthetic/plan in the last proposal). 
