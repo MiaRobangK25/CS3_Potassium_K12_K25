@@ -57,16 +57,18 @@
 
 > D. `Drill Ideas` - If we have any ideas for extra drills/activities they can do in their free time to practice debating, we hope to add them here!
     
-## [RUBRIC] Definition of Done 
+## [RUBRIC] Definition of Done for the FINAL WEBSITE 
 
 ### 1. **All of the information is present**
 - This applies especially for the pages that are information heavy. 
-> Pages such as 
+> Pages such as MOTION ANALYSIS, CASE ANALYSIS, and RESOURCES are the remaining pages that have missing/needed information or text. 
 
-### 2. ****
--
-> 
+*`FLAG: The same goes for the rest of the pages, so we will double check once we submit our website again!`*
 
-### 3. ****
--
-> 
+### 2. **All dropboxes, clickable features, animations should work**
+- This means that all of the information should be accessible, and visible when interacted with. This includes any animations or other features (i.e. hovering over certain text). 
+
+### 3. **The format/flow of the website (and its' content) should be coherent**
+- There shouldn't be any information scattered about the website. It should be consistent for each page, and 
+
+### 4. ****
