@@ -10,36 +10,39 @@
 *`FLAG: This website is data-heavy and full of information, but we hope to make it as digestable as possible!`*
 
 ### 1. **Home**
-- This will mainly stay the same as the Initial Project Proposal. 
+- This will mainly stay the same as the Initial Project Proposal. This is the **MAIN PAGE** of our website. 
 > `MAIN ADDITION to the TENTATIVE PAGE` - *Change in formatting*, most likely the addition of a photo or something else on the right side of this page. Content will stay the same. 
 
 ### 2. **Introduction**
-- This will mainly stay the same as the Initial Project Proposal. 
+- This will mainly stay the same as the Initial Project Proposal. This will be a short introduction of how to navigate all of the other pages, and additional context to debate world all beginners should know! 
 > `MAIN ADDITION to the TENTATIVE PAGE` - Since all of the information and drop-down boxes have already been added, we hope to add some *animation* to make the transition of clicking the dropbox easier. 
 
 ### 3. **Timekeeper**
-- This will mainly stay the same as the Initial Project Proposal. 
+- This will mainly stay the same as the Initial Project Proposal. This will be where they can find a timer and a stopwatch feature, that can be adjusted depending on the time needed by the user. 
 
-> A.`MAIN ADDITION/S to the TENTATIVE PAGE` - *Change in formatting* of how people can use this page, and how the short description will be placed. 
+> A.`ADDITION to the TENTATIVE PAGE` - *Change in formatting (HTML & CSS)* of how people can use this page, and how the short description will be placed. 
 
-> B. `MAIN ADDITION/S to the TENTATIVE PAGE` - We hope to make the *timer & stopwatch feature that will be provided fully functioning*. These can be set to different limits depending on their preference, using JavaScript. 
+> B. `ADDITION to the TENTATIVE PAGE` - We hope to make the *timer & stopwatch feature that will be provided fully functioning*. These can be set to different limits depending on their preference, using JavaScript. 
 
 ### 4. **Speaker Roles**
-- This will mainly stay the same as the Initial Project Proposal. 
-> A. Speaker roles for both AP & BP debate formats will be explained
+- This will mainly stay the same as the Initial Project Proposal. This is where all of the other details and necessary information about the different roles debaters may have in a debate. 
+> A.`ADDITION to the TENTATIVE PAGE` - Since all of the information and drop-down boxes have also been added already, we hope to add some *animation* to make the transition of clicking the dropbox easier. 
 
-> B. Sample speeches can also be found here
-
-> C. Debate formats will also be visible here
+> B.`ADDITION to the TENTATIVE PAGE` - Adjusting the *formatting* of all of the information and photos, so that they flow much more smoothly when reading or checking the page out. 
 
 ### 5. **Motion Analysis**
-- This will mainly stay the same as the Initial Project Proposal. 
-> .
+- This will mainly stay the same as the Initial Project Proposal. Here, we will still analyze all of the different motion types. 
+> A. `ADDITION to the TENTATIVE PAGE` - *Add all of the missing information*, especially from the descriptions of the motion types. 
+
+> B. `ADDITION to the TENTATIVE PAGE` - *Fix the formatting*, especially when all of the information will be displayed or clicked on 
+
+> C. `ADDITION to the TENTATIVE PAGE` - Once all of the information has been added, we hope to add some *animations* to add some flavor to the page!~ 
 
 ### 6. **Case Analysis**
-- This will mainly stay the same as the Initial Project Proposal. 
-> A collection of different motions 
-> Allows users to better understand applications of motion types
+- This will mainly stay the same as the Initial Project Proposal. We will still be using one of the example cases from one of our club sessions-- and a motion from a competition the Invictus Varsity recently had. 
+> A. `ADDITION to the TENTATIVE PAGE` - *Adjusting the formatting*, and the flow of the case from the top to the bottom
+
+> B. `ADDITION to the TENTATIVE PAGE` - *Hovering animation* over some of the sections/parts of the case-- just so that it can help guide people through the case (and explain the structure & what is going on)
 
 ### 7. **`[Added Page]` Resources**
 - Here, we hope to add some addition resources, files, and links that may be helpful to beginner debaters!
@@ -57,8 +60,8 @@
 ## [RUBRIC] Definition of Done 
 
 ### 1. **All of the information is present**
-- This applies especially for the pages that are information heavy. Pages such as: 
-> 
+- This applies especially for the pages that are information heavy. 
+> Pages such as 
 
 ### 2. ****
 -
