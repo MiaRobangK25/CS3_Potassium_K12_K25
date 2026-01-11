@@ -30,6 +30,8 @@
 
 > B.`ADDITION to the TENTATIVE PAGE` - Adjusting the *formatting* of all of the information and photos, so that they flow much more smoothly when reading or checking the page out. 
 
+> C. `ADDITION TO THE TENTATIVE PAGE` - *Adding cute photos/images (if possible) that can help visualize what each role does-- especially since we're already explaining all of the speaker roles in food terms. 
+
 ### 5. **Motion Analysis**
 - This will mainly stay the same as the Initial Project Proposal. Here, we will still analyze all of the different motion types. 
 > A. `ADDITION to the TENTATIVE PAGE` - *Add all of the missing information*, especially from the descriptions of the motion types. 
@@ -43,6 +45,8 @@
 > A. `ADDITION to the TENTATIVE PAGE` - *Adjusting the formatting*, and the flow of the case from the top to the bottom
 
 > B. `ADDITION to the TENTATIVE PAGE` - *Hovering animation* over some of the sections/parts of the case-- just so that it can help guide people through the case (and explain the structure & what is going on)
+
+> C. `ADDITION to the TENTATIVE PAGE` - We will also add a feature where you can *click to see the opposition and proposition case*, and switch between the two!
 
 ### 7. **`[Added Page]` Resources**
 - Here, we hope to add some addition resources, files, and links that may be helpful to beginner debaters!
@@ -65,9 +69,14 @@
 
 *`FLAG: The same goes for the rest of the pages, so we will double check once we submit our website again!`*
 
-### 2. **All featurs: dropboxes, clickable features, animations should work**
+### 2. **All features: dropboxes, clickable features, animations should work**
 - This means that all of the information should be accessible, and visible when interacted with. This includes any animations or other features (i.e. hovering over certain text). By extension, this also includes the timer in the TimeKeeper page. 
 
 ### 3. **The format/flow of the website (and its' content) should be coherent**
 - There shouldn't be any information scattered about the website. It should be consistent for each page, easy to follow, and understand. 
 - The overall flow/look of the website should also be evaluated! Whether or not it looks complete, should also be considered when graded (since we strayed away from the original aesthetic/plan in the last proposal). 
+
+### 4. **Adaptability to Devices**
+- Users are able to easily navigate the webpage on any device, or at the very least it is accessible on other devices. 
+- Visually appealing to users (can be checked/tested with volunteers)
+
