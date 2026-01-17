@@ -1,4 +1,4 @@
-/* ===== Page 1: Introduction Styles ===== */
+/* ===== Page 1: Introduction ===== */
 
 body {
     margin: 0;
@@ -7,6 +7,7 @@ body {
     position: relative;
 }
 
+/* BACKGROUND */
 body::before {
     content: "";
     position: fixed;
@@ -25,23 +26,41 @@ body::before {
     z-index: -1;
 }
 
+/* HEADINGS */
 h1 {
-    transform: translate(40px, 0px);
+    margin-left: 40px;
     font-family: Arial, Verdana, Helvetica;
     font-size: 90px;
     color: white;
-    margin: 0;
+    margin-top: 0;
 }
 
+h2 {
+    padding: 15px 20px;
+    margin-left: 40px;
+    width: 45%; /* left side */
+    background-color: #604c1cd2;
+    color: rgb(235, 227, 187);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+h2:hover {
+    background-color: #876b2e;
+}
+
+/* TEXT */
 p {
-    transform: translate(40px, 0px);
     font-size: 20px;
     color: rgb(255, 248, 222);
-    padding: 5px;
     line-height: 1.6;
-    width: 650px;
+    width: 60%; /* left side */
+    margin-left: 40px;
+    padding: 5px 0;
 }
 
+/* TABLES */
 table {
     border-collapse: collapse;
     width: 500px;
@@ -50,7 +69,7 @@ table {
     border-radius: 40px;
     color: rgb(228, 206, 133);
     overflow: hidden;
-    transform: translate(40px, 0px);
+    margin-left: 10px;
 }
 
 td, th {
@@ -65,25 +84,33 @@ img {
     border-radius: 50%;
 }
 
+/* RIGHT MENU */
 .right-menu {
-    transform: translate(90px, 70px);
-    padding: 30px;
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    width: 30%;
+    padding: 0;
 }
 
-h2 {
-    padding: 15px 20px;
-    margin-left: 40px;
-    background-color: #604c1cd2;
-    color: rgb(235, 227, 187);
-    border-radius: 12px;
-    cursor: pointer;
-}
-
-h2:hover {
-    background-color: #876b2e;
-}
+/* the annoying animation */
 
 .toggle-content {
-    display: none;
-    padding-left: 20px;
+    max-height: 0;        
+    overflow: hidden;
+    padding: 0 20px;     
+    width: 60%;          
+    margin-left: 40px;
+    border-radius: 12px;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+}
+
+
+.toggle-content.show {
+    max-height: 300px;  
+    padding: 10px 20px;
+}
+
+.toggle-content p {
+    margin: 5px 0;
 }
