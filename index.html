@@ -9,7 +9,7 @@
 
     <!-- EXTERNAL CSS -->
     <link rel="stylesheet" href="css/externaldesigns.css">
-
+    <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>
@@ -25,77 +25,75 @@
             <li><a href="pages/Page5CaseAnalysis.html">Case Analysis</a></li>
         </ul>
     </nav>
-    <!-- NAVBAR -->
 
-    <!-- PAGE CONTENT -->
-     <div class="content" >
-        <!-- MAIN HEADING -->
+    <br><br><br>
 
-        <div class="content">
-            <img src="/images/HOME_Welcome.png" alt="HomePhoto" width="300" height="130">
-          </div>
-
-        <!-- QUOTE TABLE -->
-        <table class="shadow">
-            <tr><th><i>The world of debate, brought closer to you ;></i></th></tr>
-        </table>
-
-        <!-- INTRO PARAGRAPHS -->
-        <p>
-            Our website aims to help gather materials and introduce the <b><u>World of Debate</u></b> to our younger batches! 
-            As proud <b><i>Invictus Debaters (PSHS-MC's own Speech & Debate Club)</i></b>, we wanted to make the 
-            <b>process of learning how to debate and improving at it easier for everyone else</b>. 
-        </p>
-        <p>
-            With that being said, there are many different aspects to debate that <b><i>YOU</i></b> must know, 
-            which takes much time to find out for yourself. We want to use our CS3 Project to show you the 
-            <b><i>beauty of debate</i></b>, and <b><i>gain your confidence</i></b> even as a complete beginner 
-            to <b><u>Debate Land</u></b> in the Philippine Debate Circuit! 
-        </p>
-        <p style="font-family: 'Times New Roman';">
-            <i> – [Batch 2029] Amelia S. Robang & Pio D. Festejo</i>
-        </p>
+    <!-- WELCOME IMAGE -->
+    <div class="welcome-image">
+        <img src="images/HOME_Welcome.png" alt="Welcome to Motion Notion">
     </div>
+
     <!-- PAGE CONTENT -->
+    <div class="content">
 
-    <!-- FOOTER -->
-    <a href="pages/sources.html" class="bottom-link">
-        <div class="bottom-box">
-            <p>© 2025 Motion Notion. COPYRIGHT © ROBANG, FESTEJO & SOURCES. All rights reserved.</p>
+        <div class="quote-hero">
+            The world of debate, brought closer to you ;)
         </div>
-    </a>
+
+        <p>
+            Our website aims to help gather materials and introduce the <b><u>World of Debate</u></b> to our younger batches.
+            As proud <b><i>Invictus Debaters (PSHS-MC’s own Speech & Debate Club)</i></b>, we wanted to make the
+            <b>process of learning and improving at debate easier and more accessible</b>.
+        </p>
+
+        <p>
+            Debate has many moving parts that often take years to fully understand.
+            Through this CS3 project, we hope to showcase the <b><i>beauty of debate</i></b> and
+            help you gain confidence even as a complete beginner in the Philippine debate circuit.
+        </p>
+
+        <p class="signature">
+            <i>– [Batch 2029] Amelia S. Robang & Pio D. Festejo</i>
+        </p>
+
+        <div class="quote-hero">
+            About Us...
+        </div>
+
+        <!-- ABOUT US SECTION -->
+        <div class="about-section">
+            <table class="about-table">
+                <tr>
+                    <td class="about-card about-photo">
+                        <img src="images/temp_about_photo.png" alt="Temporary About Photo">
+                    </td>
+                    <td class="about-card about-photo">
+                        <img src="images/temp_about_photo.png" alt="Temporary About Photo">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="about-card">
+                        <h3>[My Name]</h3>
+                        <p>Insert Intro</p>
+                    </td>
+                    <td class="about-card">
+                        <h3>[My Name]</h3>
+                        <p>Insert Intro</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
     <!-- FOOTER -->
+    <footer class="bottom-box">
+        <p>© 2025 Motion Notion. COPYRIGHT © ROBANG, FESTEJO & SOURCES. All rights reserved.</p>
+    </footer>
 
-    <!-- JAVASCRIPT -->
-    <script>
-        // let's quickly explain the JS HERE, in this main page 
-        function settingActivePage()
-        {
-            var links = document.querySelectorAll(".navbar a");
-            // get all navbar links, and input it into this variable
-            var page = window.location.pathname.split("/").pop();
-            // window.location.pathname gives the path so it can map all the content inside correctly
-            // split spliits it, so we can put it into an array
-            // pop fixes the order in the array
-            
-            // cycles through the names to add/remove the active status 
-            for (i=0; i<links.length; i++)
-            {
-                links[i].classList.remove("active"); 
-                
-                //.getAttribute is targetting the file's link
-                if ((links[i].getAttribute("href") === page) || (page === "" && links[i].getAttribute("href") === "index.html"))
-                {
-                    links[i].classList.add("active"); 
-                }
-            }
-        }
-
-        // runs the function
-        window.onload = settingActivePage(); 
-
-    </script>
-    <!-- JAVASCRIPT -->
+    <!-- EXTERNAL JS -->
+    <script src="js/home.js"></script>
 
 </body>
 </html>
+

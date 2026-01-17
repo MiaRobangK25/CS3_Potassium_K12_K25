@@ -62,7 +62,8 @@ p, li {
     margin-left: 40px;
 }
 
-/* TOGGLE CONTENT */
+/* TOGGLE CONTENT ANIMATION */
+
 .toggle-content {
     max-height: 0;
     overflow: hidden;
@@ -71,7 +72,7 @@ p, li {
 }
 
 .toggle-content.show {
-    max-height: 1000px;
+    max-height: 1000px; 
     padding: 10px 20px;
 }
 
@@ -87,7 +88,7 @@ p, li {
     border-radius: 20px;
 }
 
-/* SHADOW BOXES (if needed) */
+/* SHADOW BOXES (if needed? idk dawg) */
 .shadow {
     box-shadow: 2px 2px 4px #4f3405;
     border: 1px solid rgb(77, 49, 10);
