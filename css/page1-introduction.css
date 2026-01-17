@@ -1,0 +1,89 @@
+/* ===== Page 1: Introduction Styles ===== */
+
+body {
+    margin: 0;
+    padding-top: 60px;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        linear-gradient(rgba(107, 73, 34, 0.53), rgba(0, 0, 0, 0.3)),
+        linear-gradient(to left, rgba(195, 128, 51, 0.271), rgba(43, 22, 8, 0.714)),
+        url('../images/UPRHS_Van.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    filter: blur(2px);
+    z-index: -1;
+}
+
+h1 {
+    transform: translate(40px, 0px);
+    font-family: Arial, Verdana, Helvetica;
+    font-size: 90px;
+    color: white;
+    margin: 0;
+}
+
+p {
+    transform: translate(40px, 0px);
+    font-size: 20px;
+    color: rgb(255, 248, 222);
+    padding: 5px;
+    line-height: 1.6;
+    width: 650px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 500px;
+    background-color: #725309;
+    font-size: 20px;
+    border-radius: 40px;
+    color: rgb(228, 206, 133);
+    overflow: hidden;
+    transform: translate(40px, 0px);
+}
+
+td, th {
+    border: none;
+    padding: 15px;
+    text-align: center;
+}
+
+img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.right-menu {
+    transform: translate(90px, 70px);
+    padding: 30px;
+}
+
+h2 {
+    padding: 15px 20px;
+    margin-left: 40px;
+    background-color: #604c1cd2;
+    color: rgb(235, 227, 187);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+h2:hover {
+    background-color: #876b2e;
+}
+
+.toggle-content {
+    display: none;
+    padding-left: 20px;
+}

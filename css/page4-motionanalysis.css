@@ -1,0 +1,109 @@
+/* BODY AND BACKGROUND */
+body {
+    margin: 0;
+    padding-top: 60px; 
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        linear-gradient(rgba(65, 43, 18, 0.646), rgba(0, 0, 0, 0.3)),
+        linear-gradient(to left, rgba(138, 87, 29, 0.271), rgba(43, 22, 8, 0.714)),
+        url('../images/WhatTypeOfRel.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 55%;
+    background-size: cover;
+    filter: blur(4px); 
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* HEADINGS */
+h1 {
+    transform: translate(40px, 0px);
+    font-family: "Arial", Verdana, Helvetica;
+    font-weight: 400;
+    font-size: 85px;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    padding: 15px 20px;          
+    margin-left: 40px;             
+    margin-bottom: 10px;           
+    background-color: #604c1cd2;     
+    color: rgb(235, 227, 187);     
+    font-family: "Arial", Verdana, Helvetica;
+    cursor: pointer;              
+    border-radius: 12px;           
+    transition: background 0.3s;   
+}
+
+h2:hover {
+    background-color: #876b2e;  
+}
+
+/* TEXT */
+p {
+    transform: translate(40px, 0px);
+    font-family: "Arial", Verdana, Helvetica;
+    font-size: 20px;
+    color: rgb(255, 248, 222);
+    padding: 5px;
+    line-height: 1.6;
+    width: 650px;
+}
+
+/* TABLES */
+table {
+    border-collapse: collapse;
+    width: 500px;
+    table-layout: auto;
+    background-color: #725309;
+    border-color: #725309;
+    font-family: "Arial", Verdana, Helvetica;
+    font-size: 20px;
+    border-radius: 40px;
+    color: rgb(228, 206, 133);
+    overflow: hidden;
+    transform: translate(40px, 0px);
+}
+
+td, th {
+    border: none;
+    background-color: #725309;
+    border-spacing: 10px;
+    text-align: center;
+    padding: 15px;
+    font-family: "Arial", Verdana, Helvetica;
+}
+
+/* CONTENT */
+.content {
+    transform: translate(50px, 0px);
+}
+
+.inline-toggle {
+    display: inline-block;
+    vertical-align: top;
+    width: 500px;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 100px;
+}
+
+/* TOGGLE */
+.toggle-content {
+    display: none;
+    padding-left: 20px;
+}

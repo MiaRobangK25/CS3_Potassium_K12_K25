@@ -1,0 +1,247 @@
+/* External CSS file for design & styling (Page 2) */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #391e0def;
+  padding: 15px 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(56, 30, 15, 0.883);
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Arial", Verdana, Helvetica;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #fff5e0;
+  background-color: #834f2a; 
+  padding: 8px 15px;  
+  border-radius: 8px;
+}
+
+body {
+  padding-top: 50px; 
+}
+
+.page {
+  display: flex;         
+  align-items: flex-start;
+}
+
+.content {
+  flex: 1;            
+  margin-right: 20px;
+}
+
+.right-menu {
+  width: 1000px;        
+  position: sticky;                       
+}
+
+
+.bottom-box p {
+  margin: 0;
+  font-size: 15px;
+}
+
+.bottom-box {
+  background-color: #432715;
+  padding: 10px 0;
+}
+
+.bottom-link {
+  display: block;
+  text-decoration: none;
+  color: rgb(252, 242, 202);
+  font-size: 14px;
+}
+
+.navbar a.active {
+  color: #fff5e0;
+  background-color: #b3784d;
+  padding: 8px 15px;
+  border-radius: 8px;
+}
+
+    /* Dropdown menu */
+    nav ul ul {
+      display: none; /* hidden by default */
+      position: absolute;
+      top: 100%; /* place below parent */
+      left: 0;
+      background: #eee;
+      padding: 0;
+      min-width: 180px;
+      align-items: center;
+    }
+    nav ul ul li a {
+      color: #333;
+      padding: 0.75rem;
+    }
+    nav ul ul li a:hover {
+      background: #ddd;
+    }
+
+    /* Show dropdown on hover */
+    nav li:hover > ul {
+      display: block;
+    }
+
+    /* Page 2 - Time Keeper CSS */
+
+/* BODY STYLING */
+body {
+  margin: 0;
+  padding-top: 60px;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+/* Page 2 - Time Keeper CSS */
+
+/* BODY STYLING */
+body {
+  margin: 0;
+  padding-top: 60px;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+/* BACKGROUND IMAGE WITH OVERLAY */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+      linear-gradient(rgba(107, 73, 34, 0.53), rgba(0, 0, 0, 0.3)),
+      linear-gradient(to left, rgba(195, 128, 51, 0.271), rgba(43, 22, 8, 0.714)),
+      url('../images/PSDC2026Neverland.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  filter: blur(4px);  
+  z-index: -1; 
+}
+
+/* HEADINGS */
+h1 { 
+  font-family: "Arial", Verdana, Helvetica;
+  font-weight: 40%;
+  font-size: 80px;
+  color: white;
+  padding: 0%;
+  margin: 0%;
+}
+
+/* PARAGRAPHS */
+p {
+  transform: translate(40px, 0px);
+  font-family: "Arial", Verdana, Helvetica;
+  font-size: 20px;
+  color: rgb(255, 248, 222);
+  padding: 5px;
+  line-height: 1.6;
+  width: 650px;
+}
+
+/* TABLE STYLING */
+table {
+  border-collapse: collapse;
+  width: 500px;
+  table-layout: auto;
+  background-color: #725309;
+  border: solid black 2px;
+  font-family: "Arial", Verdana, Helvetica;
+  font-size: 20px;
+  border-radius: 40px;
+  color: rgb(228, 206, 133);
+  overflow: hidden;
+  transform: translate(40px, 0px);
+  margin-bottom: 90px;
+}
+
+/* TABLE CELLS */
+td, th {
+  border: none;
+  background-color: #725309;
+  border-spacing: 10px;
+  text-align: center;
+  padding: 15px;
+  font-family: "Arial", Verdana, Helvetica;
+}
+
+/* IMAGES */
+img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+/* RIGHT MENU BOX */
+.right-menu {
+  transform: translate(90px, 70px);
+  padding: 30px;
+}
+
+/* PAGE CONTENT CONTAINER */
+.content {
+  transform: translate(50px, 0px);
+}
+
+/* H2 TOGGLES */
+h2 {
+  padding: 15px 20px;
+  margin-left: 40px;
+  margin-bottom: 10px;
+  background-color: #604c1cd2;
+  color: rgb(235, 227, 187);
+  font-family: "Arial", Verdana, Helvetica;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background 0.3s;
+}
+
+h2:hover {
+  background-color: #876b2e;
+}
+
+/* COLLAPSIBLE CONTENT */
+.toggle-content {
+  display: none;
+  padding-left: 20px;
+}
+
+.toggle {
+  cursor: pointer;
+}
+
+/* INLINE TABLES */
+.inline-table {
+  display: inline-block;
+  vertical-align: top;
+  width: 400px;
+}
+
+/* RIGHT MENU TABLE MARGINS */
+.right-menu table {
+  margin-bottom: 90px;
+}
