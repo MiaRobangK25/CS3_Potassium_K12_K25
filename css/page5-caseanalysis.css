@@ -99,3 +99,26 @@ h3, ul, p {
     row-gap: 40px;
     color: rgb(252, 242, 202);
 }
+
+.button {
+    background-color: #8c5e1e;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    margin-left: 40px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-family: "Arial", Verdana, Helvetica;
+}
+
+.button:hover {
+    background-color: #ba893f;
+    transform: scale(1.1);
+}
+
+

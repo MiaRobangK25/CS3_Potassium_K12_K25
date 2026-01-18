@@ -100,6 +100,7 @@ td, th {
     cursor: pointer;
     text-align: center;
     margin-left: 100px;
+        
 }
 
 /* TOGGLE */
@@ -112,6 +113,26 @@ td, th {
 }
 
 .toggle-content.show {
-    max-height: 1000px;  /* adjust to fit your content */
+    max-height: 1000px;  
     padding: 10px 20px;
+    flex: 1;
+    min-width: 280px;
+}
+
+.toggle-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 24px;
+    align-items: start;
+}
+
+.toggle-column {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.toggle-card {
+    padding: 12px;
+    border-radius: 8px;
 }
