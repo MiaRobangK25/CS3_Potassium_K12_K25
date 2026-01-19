@@ -38,12 +38,18 @@ h1 {
 }
 
 h2 {
-    transform: translate(30px, 10px);
+    transform-origin: center center;
+    display: inline-block;
     font-family: "Arial", Verdana, Helvetica;
     font-size: 30px;
     color: white;
     padding: 0;
     margin: 0;
+}
+
+h2:hover {
+    color: #d4b96e;
+    transform: scale(1.05);
 }
 
 /* TABLE */
