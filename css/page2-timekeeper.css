@@ -42,12 +42,12 @@ body {
 
 .page {
   display: flex;         
-  align-items: flex-start;
+  
 }
 
 .content {
-  flex: 1;            
-  margin-right: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .right-menu {
@@ -177,6 +177,7 @@ table {
   overflow: hidden;
   transform: translate(40px, 0px);
   margin-bottom: 90px;
+  display: block;
 }
 
 /* TABLE CELLS */
@@ -235,13 +236,18 @@ h2:hover {
 }
 
 /* INLINE TABLES */
-.inline-table {
-  display: inline-block;
-  vertical-align: top;
-  width: 400px;
+.table-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    width: 100%;
 }
 
-/* RIGHT MENU TABLE MARGINS */
-.right-menu table {
-  margin-bottom: 90px;
+.inline-table {
+    width: 400px;
+    text-align: center;
 }
+
+
