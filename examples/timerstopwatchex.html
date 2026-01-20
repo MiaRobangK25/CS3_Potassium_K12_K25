@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>Timer & Stopwatch</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
+            font-family: Arial, Verdana, Tahoma;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            margin-top: 20px;
+            color:rgb(31, 20, 5); 
         }
 
         .container {
-            background: white;
+            background: rgb(255, 249, 241);
             padding: 20px 30px;
-            border-radius: 10px;
-            width: 320px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 20px;
+            width: 450px;
+            box-shadow: 0 0 10px rgba(95, 53, 5, 0.822);
         }
 
         h2 {
             text-align: center;
+            font-family: Arial, Verdana, Tahoma;
+            color:rgb(31, 20, 5); 
+            font-weight: bold;
+            font-size: 35px;
         }
 
         .section {
@@ -30,9 +35,11 @@
         }
 
         .time-display {
-            font-size: 36px;
+            font-size: 90px;
             text-align: center;
             margin: 10px 0;
+            font-family: Arial, Verdana, Tahoma;
+            color:rgb(31, 20, 5); 
         }
 
         .inputs {
@@ -40,25 +47,60 @@
             justify-content: center;
             gap: 10px;
             margin-bottom: 10px;
+            font-family: Arial, Verdana, Tahoma;
+            color:rgb(31, 20, 5); 
         }
 
         input {
-            width: 80px;
+            width: 120px;
             padding: 6px;
             text-align: center;
-            font-size: 16px;
+            font-size: 20px;
+            font-family: Arial, Verdana, Tahoma;
+            color:rgb(88, 57, 14); 
+            border-radius: 18px;
+            background: rgb(248, 233, 215);
+            border: 4px solid rgba(160, 114, 62, 0.532);
+            transition: border-color 0.2s ease, background 0.2s ease;
         }
 
         .buttons {
             display: flex;
             justify-content: center;
-            gap: 10px;
+            gap: 15px;
         }
 
         button {
             padding: 6px 14px;
             cursor: pointer;
+            font-family: Arial, Verdana, Tahoma;
+            color:rgb(31, 20, 5); 
+            font-family: Arial, Verdana, Tahoma;
+            font-size: 21px;
+            font-weight: bold;
+            background: rgb(226, 189, 137); 
+            border: 4px solid rgba(160, 114, 62, 0.532);
+            border-radius: 25px;
+
+            transition: 
+                background 0.3s ease,
+                transform 0.2s ease,
+                box-shadow 0.2s ease,
+                filter 0.2s ease;
         }
+
+        button:hover {
+            background: rgb(239, 203, 152); 
+            box-shadow: 0 6px 12px rgba(186, 121, 46, 0.212); 
+            filter:brightness(1.05); 
+        }
+
+        button:active {
+            transform: translateY(1px); 
+            box-shadow: 0 3px 6px rgba(95, 53, 5, 0.3); 
+            filter: brightness(1); 
+        }
+
     </style>
 </head>
 <body>
@@ -69,14 +111,14 @@
         <h2>Countdown Timer</h2>
 
         <div class="inputs">
-            <input type="number" id="timerMinutes" placeholder="Minutes" min="0">
-            <input type="number" id="timerSeconds" placeholder="Seconds" min="0" max="59">
+            <input type="number" id="timerMinutes" placeholder="00 | Minutes" min="0" max="59">
+            <input type="number" id="timerSeconds" placeholder="00 | Seconds" min="0" max="59">
         </div>
 
         <div class="time-display" id="timerDisplay">00:00</div>
 
         <div class="buttons">
-            <button onclick="startTimer()">Start</button>
+            <button onclick="startTimer()">Start | Continue</button>
             <button onclick="pauseTimer()">Pause</button>
             <button onclick="resetTimer()">Reset</button>
         </div>
@@ -89,7 +131,7 @@
         <div class="time-display" id="stopwatchDisplay">00:00</div>
 
         <div class="buttons">
-            <button onclick="startStopwatch()">Start</button>
+            <button onclick="startStopwatch()">Start | Continue</button>
             <button onclick="pauseStopwatch()">Pause</button>
             <button onclick="resetStopwatch()">Reset</button>
         </div>
@@ -97,19 +139,27 @@
 </div>
 
 <script>
-    /* -------- TIMER -------- */
+
+/* -------- 1) TIMER -------- */
+
     let timerInterval = null;
+    // stores ID to help show went to STOP, PAUSE, or REPEAT
     let timerTime = 0;
+    // stores total time in SECONDS --> js cus it's easier to work with,, just for TIMER (Countdown) 
 
     function startTimer() {
         if (!timerInterval) {
+            // used !timerInterval so that multiple timers won't work at the same time 
             if (timerTime === 0) {
                 const m = parseInt(document.getElementById("timerMinutes").value) || 0;
                 const s = parseInt(document.getElementById("timerSeconds").value) || 0;
                 timerTime = m * 60 + s;
             }
+            // Receive data for the MM and SS, as this is similar to the GRADED 2 we did,,,, 
+            // Computes timerTime as well for the minutes to seconds (for easier tracking)
 
             timerInterval = setInterval(() => {
+            // runs the thing every one second as the interval
                 if (timerTime <= 0) {
                     clearInterval(timerInterval);
                     timerInterval = null;
@@ -126,14 +176,18 @@
         clearInterval(timerInterval);
         timerInterval = null;
     }
+    // we gotta pause the timer... so the time is SAVED when PAUSED 
 
     function resetTimer() {
         pauseTimer();
         timerTime = 0;
+        localStorage.removeItem("timerTime");
         updateTimerDisplay();
         document.getElementById("timerMinutes").value = "";
         document.getElementById("timerSeconds").value = "";
     }
+    // here we put the code to RESET the timer..... 
+    // sets the MM and the SS as blank again 
 
     function updateTimerDisplay() {
         const m = Math.floor(timerTime / 60);
@@ -141,18 +195,30 @@
 
         document.getElementById("timerDisplay").textContent =
             `${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
-    }
 
-    /* -------- STOPWATCH -------- */
+        localStorage.setItem("timerTime", timerTime);
+
+    }
+    // conversion of seconds to minutes, and the MM / SS stuff 
+    // the .textContent makes sure that when you increase the values for MM and SS, it will not put it in the wrong position/place
+    // also saving it from what I learned from graded task 2 
+
+/* -------- 2) STOPWATCH -------- */
+
     let stopwatchInterval = null;
+    // thiis also helps store the ID to help show went to STOP, PAUSE, or REPEAT
     let stopwatchTime = 0;
+    // also stores total time in SECONDS,, just for STOPWATCH 
+
 
     function startStopwatch() {
         if (!stopwatchInterval) {
+        // avoiding repeats dawg 
             stopwatchInterval = setInterval(() => {
                 stopwatchTime++;
                 updateStopwatchDisplay();
             }, 1000);
+        // adjusts the display as welll && the same thing for the 1 second intervaal that increases
         }
     }
 
@@ -160,20 +226,43 @@
         clearInterval(stopwatchInterval);
         stopwatchInterval = null;
     }
+    // just making sure when u pause it still saaves from when u click it at that time 
 
     function resetStopwatch() {
         pauseStopwatch();
         stopwatchTime = 0;
+        localStorage.removeItem("stopwatchTime");
         updateStopwatchDisplay();
     }
+    // it resents everything to zero & the display as well. Although it pauses fiirst though 
 
     function updateStopwatchDisplay() {
         const m = Math.floor(stopwatchTime / 60);
         const s = stopwatchTime % 60;
+    // same saame thing here, conversion, allat 
 
         document.getElementById("stopwatchDisplay").textContent =
             `${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
+        localStorage.setItem("stopwatchTime", stopwatchTime);
+
+    // this is added n the same as before just for formatting purposes z
+    // also saving it frum what I learned from graded task 2
     }
+
+    window.onload = () => {
+        const savedTimer = localStorage.getItem("timerTime");
+        const savedStopwatch = localStorage.getItem("stopwatchTime");
+
+        if (savedTimer !== null) {
+            timerTime = parseInt(savedTimer);
+            updateTimerDisplay();
+        }
+
+        if (savedStopwatch !== null) {
+            stopwatchTime = parseInt(savedStopwatch);
+            updateStopwatchDisplay();
+        }
+    };
 </script>
 
 </body>

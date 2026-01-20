@@ -65,6 +65,8 @@ body {
   background-color: #432715;
   padding: 10px 0;
   margin-top: 500;
+  text-align: center; 
+  position: relative;
 }
 
 .bottom-link {
@@ -146,22 +148,20 @@ body::before {
 /* HEADINGS */
 h1 { 
   font-family: "Arial", Verdana, Helvetica;
-  font-weight: 40%;
+  font-weight: 400;  
   font-size: 80px;
   color: white;
-  padding: 0%;
-  margin: 0%;
+  margin: 0 40px 20px 40px; 
 }
 
-/* PARAGRAPHS */
+/* PARAGRAPHS,, ? */
 p {
-  transform: translate(40px, 0px);
   font-family: "Arial", Verdana, Helvetica;
   font-size: 20px;
   color: rgb(255, 248, 222);
-  padding: 5px;
+  padding: 5px 40px 5px 40px; 
   line-height: 1.6;
-  width: 650px;
+  max-width: 650px; 
 }
 
 /* TABLE STYLING */
@@ -181,15 +181,6 @@ table {
   display: block;
 }
 
-/* TABLE CELLS */
-td, th {
-  border: none;
-  background-color: #725309;
-  border-spacing: 10px;
-  text-align: center;
-  padding: 15px;
-}
-
 /* IMAGES */
 img {
   width: 90px;
@@ -206,45 +197,4 @@ img {
 /* PAGE CONTENT CONTAINER */
 .content {
   transform: translate(50px, 0px);
-}
-
-/* H2 TOGGLES */
-h2 {
-  padding: 15px 20px;
-  margin-left: 40px;
-  margin-bottom: 10px;
-  background-color: #604c1cd2;
-  color: rgb(235, 227, 187);
-  font-family: "Arial", Verdana, Helvetica;
-  cursor: pointer;
-  border-radius: 12px;
-  transition: background 0.3s;
-}
-
-h2:hover {
-  background-color: #876b2e;
-}
-
-/* COLLAPSIBLE CONTENT */
-.toggle-content {
-  display: none;
-  padding-left: 20px;
-}
-
-.toggle {
-  cursor: pointer;
-}
-
-/* INLINE TABLES */
-.table-container { 
-  display: flex; 
-  flex-wrap: wrap; 
-  justify-content: space-between; 
-  margin: 20px; 
-} 
-
-.inline-table{
-  border-collapse: collapse; 
-  width: 100%; 
-  margin-bottom: 10px; 
 }
