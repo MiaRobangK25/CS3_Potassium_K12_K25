@@ -1,0 +1,102 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content= 
+		"width=device-width, initial-scale=1.0"> 
+
+	<title>Responsive Tables</title> 
+	
+	<style> 
+		body { 
+			font-family: Arial, sans-serif; 
+			margin: 0; 
+			padding: 0; 
+		} 
+
+		.table-container { 
+			display: flex; 
+			flex-wrap: wrap; 
+			justify-content: space-between; 
+			margin: 20px; 
+		} 
+
+		.table { 
+			border-collapse: collapse; 
+			width: 100%; 
+			margin-bottom: 10px; 
+		} 
+
+		th, 
+		td { 
+			border: 1px solid #ddd; 
+			padding: 8px; 
+			text-align: left; 
+		} 
+
+		th { 
+			background-color: #f2f2f2; 
+		} 
+
+		/* Media query for small screens */ 
+		@media (min-width: 768px) { 
+			.table { 
+				width: 45%; 
+				margin-bottom: 0; 
+			} 
+		} 
+	</style> 
+</head> 
+
+<body> 
+	<div class="table-container"> 
+		<table class="table"> 
+			<tr> 
+				<th>Firstname</th> 
+				<th>Lastname</th> 
+				<th>Age</th> 
+			</tr> 
+			<tr> 
+				<td>Aman</td> 
+				<td>Sharma</td> 
+				<td>34</td> 
+			</tr> 
+			<tr> 
+				<td>Akash</td> 
+				<td>Singh</td> 
+				<td>24</td> 
+			</tr> 
+			<tr> 
+				<td>Shiva</td> 
+				<td>Jain</td> 
+				<td>41</td> 
+			</tr> 
+		</table> 
+
+		<table class="table"> 
+			<tr> 
+				<th>Firstname</th> 
+				<th>Lastname</th> 
+				<th>Age</th> 
+			</tr> 
+			<tr> 
+				<td>Priya</td> 
+				<td>Sharma</td> 
+				<td>24</td> 
+			</tr> 
+			<tr> 
+				<td>Arun</td> 
+				<td>Singh</td> 
+				<td>32</td> 
+			</tr> 
+			<tr> 
+				<td>Sam</td> 
+				<td>Watson</td> 
+				<td>41</td> 
+			</tr> 
+		</table> 
+	</div> 
+</body> 
+
+</html>
