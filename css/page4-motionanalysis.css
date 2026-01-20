@@ -131,7 +131,7 @@ td, th {
 .toggle-column {
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 7px;   
 }
 
 .toggle-card {

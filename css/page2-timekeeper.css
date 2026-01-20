@@ -64,6 +64,7 @@ body {
 .bottom-box {
   background-color: #432715;
   padding: 10px 0;
+  margin-top: 500;
 }
 
 .bottom-link {
@@ -187,7 +188,6 @@ td, th {
   border-spacing: 10px;
   text-align: center;
   padding: 15px;
-  font-family: "Arial", Verdana, Helvetica;
 }
 
 /* IMAGES */
@@ -236,18 +236,15 @@ h2:hover {
 }
 
 /* INLINE TABLES */
-.table-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 80px;
-    width: 100%;
+.table-container { 
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  margin: 20px; 
+} 
+
+.inline-table{
+  border-collapse: collapse; 
+  width: 100%; 
+  margin-bottom: 10px; 
 }
-
-.inline-table {
-    width: 400px;
-    text-align: center;
-}
-
-
