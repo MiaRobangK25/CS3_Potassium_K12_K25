@@ -50,7 +50,7 @@ h2:hover {
 /* TEXT */
 p, li {
     font-family: "Arial", Verdana, Helvetica;
-    font-size: 20px;
+    font-size: 25px;
     color: rgb(255, 248, 222);
     margin-left: 40px;
     line-height: 1.6;
@@ -58,7 +58,7 @@ p, li {
 
 /* CONTENT */
 .content { 
-    width: 800px;
+    width: 1350px;
     margin-left: 40px;
 }
 
