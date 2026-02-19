@@ -148,8 +148,8 @@ body::before {
 /* HEADINGS */
 h1 { 
   font-family: "Arial", Verdana, Helvetica;
-  font-weight: 400;  
-  font-size: 80px;
+  font-weight: 800;  
+  font-size: 90px;
   color: white;
   margin: 0 40px 20px 40px; 
 }

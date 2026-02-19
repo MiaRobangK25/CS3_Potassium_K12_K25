@@ -1,5 +1,49 @@
 /* ===== Page 1: Introduction ===== */
 
+/*NAVBAR*/
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #391e0def;
+            padding: 15px 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(56, 30, 15, 0.883);
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            font-family: "Arial", Verdana, Helvetica;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #fff5e0;
+            background-color: #834f2a;
+            padding: 8px 15px;
+            border-radius: 8px;
+        }
+
+        .navbar a.active {
+            color: #fff5e0;
+            background-color: #b3784d;
+            padding: 8px 15px;
+            border-radius: 8px;
+        }
+
 body {
     margin: 0;
     padding-top: 60px;

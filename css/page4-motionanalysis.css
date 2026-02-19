@@ -93,6 +93,7 @@ td, th {
 /* CONTENT */
 .content {
     transform: translate(50px, 0px);
+    
 }
 
 .inline-toggle {

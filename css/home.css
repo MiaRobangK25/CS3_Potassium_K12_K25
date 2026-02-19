@@ -104,9 +104,16 @@ footer.bottom-box {
     font-size: 16px;
 }
 
-footer.bottom-box p {
-    margin: 0;
-}
+footer.bottom-box {
+            background-color: #432715;
+            padding: 20px 30px;
+            text-align: center;
+            color: rgb(252, 242, 202);
+            border-radius: 10px;
+            max-width: 90%;
+            margin: 0 auto 40px auto;
+            line-height: 1.5;
+        }
 
 /* NAVBAR active */
 .navbar a.active {
