@@ -46,7 +46,7 @@
 
 > B. `ADDITION to the TENTATIVE PAGE` - *Hovering animation* over some of the sections/parts of the case-- just so that it can help guide people through the case (and explain the structure & what is going on)
 
-> C. `ADDITION to the TENTATIVE PAGE` - We will also add a feature where you can *click to see the opposition and proposition case*, and switch between the two!
+> C. `ADDITION to the TENTATIVE PAGE` - We will also add a feature where you can *click to see the different cases*, of different motions!
 
 ### 7. **`[Added Page]` Resources**
 - Here, we hope to add some addition resources, files, and links that may be helpful to beginner debaters!
