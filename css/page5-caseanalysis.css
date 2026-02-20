@@ -37,7 +37,7 @@ h1 {
     line-height: 0.9;
 }
 
-h2 {
+h2, ol {
     transform-origin: center center;
     display: inline-block;
     font-family: "Arial", Verdana, Helvetica;
