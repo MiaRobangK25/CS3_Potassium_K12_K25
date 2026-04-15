@@ -62,7 +62,6 @@
             color: rgb(255, 248, 222);
         }
 
-        /* BACKGROUND IMAGE WITH OVERLAY */
         body::before {
             content: "";
             position: fixed;
@@ -93,14 +92,22 @@
 
         .content {
             max-width: 800px;
-            text-align: left;
-            margin-bottom: 40px;
+            width: 100%;
+            margin: 0 auto 40px auto;
+            text-align: center;
         }
 
-        /* ---------------- HEADINGS ---------------- */
+        .content h1 {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
         h1 {
             font-family: "Arial", Verdana, Helvetica;
-            
             font-size: 90px;
             color: white;
             margin: 0 0 20px 0;
@@ -115,14 +122,12 @@
             margin-bottom: 20px;
         }
 
-        /* ---------------- PARAGRAPHS ---------------- */
         p {
             font-size: 20px;
             line-height: 1.6;
             margin: 10px 0;
         }
 
-        /* ---------------- CONTAINER FOR TIMER & STOPWATCH ---------------- */
         .container {
             background: rgb(248, 234, 216);
             padding: 30px 40px;
@@ -162,13 +167,6 @@
             transition: border-color 0.2s ease, background 0.2s ease;
         }
 
-        .buttons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 10px;
-        }
-
         button {
             padding: 8px 16px;
             cursor: pointer;
@@ -178,26 +176,14 @@
             background: rgb(226, 189, 137);
             border: 4px solid rgba(160, 114, 62, 0.532);
             border-radius: 25px;
-            transition: 
-                background 0.3s ease,
-                transform 0.2s ease,
-                box-shadow 0.2s ease,
-                filter 0.2s ease;
+            transition: 0.3s ease;
+            font-family: Arial, Verdana, Tahoma;
         }
 
         button:hover {
             background: rgb(239, 203, 152);
-            box-shadow: 0 6px 12px rgba(186, 121, 46, 0.212);
-            filter: brightness(1.05);
         }
 
-        button:active {
-            transform: translateY(1px);
-            box-shadow: 0 3px 6px rgba(95, 53, 5, 0.3);
-            filter: brightness(1);
-        }
-
-        /* ---------------- FOOTER ---------------- */
         footer.bottom-box {
             background-color: #432715;
             padding: 20px 30px;
@@ -209,101 +195,135 @@
             line-height: 1.5;
         }
 
-        footer.bottom-box a {
-            color: rgb(252, 242, 202);
-            text-decoration: underline;
+        /* HISTORY */
+        #historyList {
+            background: rgb(241, 215, 184);
+            border: 4px solid rgba(160, 114, 62, 0.532);
+            color: rgb(31, 20, 5);
+            border-radius: 15px;
+            padding: 15px;
+            max-height: 300px;
+            overflow-y: auto;
         }
 
-        /* Adaptability stuff*/
-        @media (max-width: 500px) {
-            .container {
-                width: 90%;
-                padding: 20px;
-            }
-
-            h1 {
-                font-size: 50px;
-            }
-
-            .time-display {
-                font-size: 60px;
-            }
-
-            button {
-                font-size: 18px;
-            }
+        .history-section {
+            margin-bottom: 20px;
         }
+
+        .history-item {
+            background: rgb(255, 248, 222);
+            border-radius: 10px;
+            padding: 10px 12px;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .history-empty {
+            text-align: center;
+            font-size: 18px;
+            color: rgba(31, 20, 5, 0.6);
+            font-style: italic;
+        }
+
+
+        #historyList,
+        #historyList * {
+            color: rgb(31, 20, 5);
+            font-family: Arial, Verdana, Tahoma;
+        }
+
+        .history-section p {
+            color: rgb(31, 20, 5);
+        }
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 12px;
+        }
+
+        .buttons button {
+            min-width: 120px;
+        }
+
+
     </style>
 </head>
+
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../pages/Page1Introduction.html">Introduction</a></li>
-            <li><a href="../pages/Page2TimeKeeper.html" class="active">Timekeeper</a></li>
-            <li><a href="../pages/Page3SpeakerRoles.html">Speaker Roles</a></li>
-            <li><a href="../pages/Page4MotionAnalysis.html">Motion Analysis</a></li>
-            <li><a href="../pages/Page5CaseAnalysis.html">Case Analysis</a></li>
-            <li><a href="../pages/Page6Resources.html">Resources</a></li>
-        </ul>
-    </nav>
+<nav class="navbar">
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../pages/Page1Introduction.html">Introduction</a></li>
+        <li><a href="../pages/Page2TimeKeeper.html" class="active">Timekeeper</a></li>
+        <li><a href="../pages/Page3SpeakerRoles.html">Speaker Roles</a></li>
+        <li><a href="../pages/Page4MotionAnalysis.html">Motion Analysis</a></li>
+        <li><a href="../pages/Page5CaseAnalysis.html">Case Analysis</a></li>
+        <li><a href="../pages/Page6Resources.html">Resources</a></li>
+    </ul>
+</nav>
 
-    <!-- PAGE CONTENT -->
-    <div class="page">
-        <div class="content">
-            <h1>Timer & Stopwatch</h1>
+<div class="page">
 
-            <p>
-                This is where you may find and use the TIMER and STOPWATCH! Whether it be for timing your preparation time, speeches, and more-- you may use this. 
-            </p>
-            <p>
-                It depends whether or not you use this website for other purposes other than debate! That is the true beauty and variety of timers, as I use kitchen timers for timing my study time & debate speeches.
-            </p>
+    <div class="content">
+        <h1>Timer & Stopwatch</h1>
+
+        <p>
+            This is where you may find and use the TIMER and STOPWATCH! Whether it be for timing your preparation time, speeches, and more—you may use this.
+        </p>
+
+        <p>
+            It depends whether or not you use this website for other purposes other than debate! That is the true beauty and variety of timers, as I use kitchen timers for timing my study time & debate speeches.
+        </p>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h3>Countdown Timer</h3>
+            <div class="inputs">
+                <input type="number" id="timerMinutes" placeholder="00 | Minutes">
+                <input type="number" id="timerSeconds" placeholder="00 | Seconds">
+            </div>
+            <div class="time-display" id="timerDisplay">00:00</div>
+            <div class="buttons">
+                <button onclick="startTimer()">Start | Continue</button>
+                <button onclick="pauseTimer()">Pause</button>
+                <button onclick="saveTimer()">Save</button>
+                <button onclick="resetTimer()">Reset</button>
+            </div>
         </div>
 
-        <!-- TIMER & STOPWATCH CONTAINER -->
-        <div class="container">
-            <!-- TIMER -->
-            <div class="section">
-                <h3>Countdown Timer</h3>
-                <div class="inputs">
-                    <input type="number" id="timerMinutes" placeholder="00 | Minutes" min="0" max="59">
-                    <input type="number" id="timerSeconds" placeholder="00 | Seconds" min="0" max="59">
-                </div>
-                <div class="time-display" id="timerDisplay">00:00</div>
-                <div class="buttons">
-                    <button onclick="startTimer()">Start | Continue</button>
-                    <button onclick="pauseTimer()">Pause</button>
-                    <button onclick="resetTimer()">Reset</button>
-                </div>
-            </div>
-
-            <!-- STOPWATCH -->
-            <div class="section">
-                <h3>Stopwatch</h3>
-                <div class="time-display" id="stopwatchDisplay">00:00</div>
-                <div class="buttons">
-                    <button onclick="startStopwatch()">Start | Continue</button>
-                    <button onclick="pauseStopwatch()">Pause</button>
-                    <button onclick="resetStopwatch()">Reset</button>
-                </div>
+        <div class="section">
+            <h3>Stopwatch</h3>
+            <div class="time-display" id="stopwatchDisplay">00:00</div>
+            <div class="buttons">
+                <button onclick="startStopwatch()">Start | Continue</button>
+                <button onclick="pauseStopwatch()">Pause</button>
+                <button onclick="saveStopwatch()">Save</button>
+                <button onclick="resetStopwatch()">Reset</button>
             </div>
         </div>
     </div>
 
-    <!-- JAVASCRIPT -->
-    <script src="../js/externalPage2.js"></script>
-    <script src="../js/home.js"></script>
+    <div class="container">
+        <h3>Speech History</h3>
+        <div id="historyList"></div>
+        <div class="buttons">
+            <button onclick="clearHistory()">Clear History</button>
+        </div>
+    </div>
 
-    <!-- FOOTER -->
-    <footer class="bottom-box">
-        <p>© 2025 Motion Notion. COPYRIGHT © ROBANG, FESTEJO & SOURCES. All rights reserved.</p> 
-        <p>Sources:</p>
-        <p>Bro Code. (2023, December 17). Build this stopwatch with JavaScript! ⏱ [Video]. YouTube. <a href="https://www.youtube.com/watch?v=d8-LGhKtzRw" target="_blank">Link</a></p>
-        <p>GeeksforGeeks. (2025, June 19). How to Create Stopwatch using HTML CSS and JavaScript ? GeeksforGeeks. <a href="https://www.geeksforgeeks.org/javascript/how-to-create-stopwatch-using-html-css-and-javascript/" target="_blank">Link</a></p>
-    </footer>
+</div>
+
+<script src="../js/externalPage2.js"></script>
+<script src="../js/home.js"></script>
+
+<footer class="bottom-box">
+    <p>© 2025 Motion Notion. COPYRIGHT © ROBANG, FESTEJO & SOURCES.</p>
+</footer>
 
 </body>
 </html>
