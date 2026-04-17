@@ -159,13 +159,21 @@ img {
     margin: 5px 0;
 }
 
-footer.bottom-box {
-            background-color: #432715;
-            padding: 20px 30px;
-            text-align: center;
+
+
+.bottom-box p { 
+            margin: 0; 
+            font-size: 15px;
+        } 
+
+        .bottom-box { 
+            background-color: #432715; 
+            padding: 10px 0; 
+        } 
+
+        .bottom-link { 
+            display: block; 
+            text-decoration: none; 
             color: rgb(252, 242, 202);
-            border-radius: 10px;
-            max-width: 90%;
-            margin: 0 auto 40px auto;
-            line-height: 1.5;
-        }
+            font-size: 14px;
+        } 

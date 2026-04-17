@@ -173,16 +173,22 @@
             background: rgb(239, 203, 152);
         }
 
-        footer.bottom-box {
-            background-color: #432715;
-            padding: 20px 30px;
-            text-align: center;
+        .bottom-box p { 
+            margin: 0; 
+            font-size: 15px;
+        } 
+
+        .bottom-box { 
+            background-color: #432715; 
+            padding: 10px 0; 
+        } 
+
+        .bottom-link { 
+            display: block; 
+            text-decoration: none; 
             color: rgb(252, 242, 202);
-            border-radius: 10px;
-            max-width: 90%;
-            margin: 0 auto 40px auto;
-            line-height: 1.5;
-        }
+            font-size: 14px;
+        } 
 
         /* HISTORY */
         #historyList {
@@ -311,7 +317,15 @@
 <script src="../js/home.js"></script>
 
 <footer class="bottom-box">
-    <p>© 2025 Motion Notion. COPYRIGHT © ROBANG, FESTEJO & SOURCES.</p>
+    <a href="sources.html" class="bottom-link">
+        <div class="bottom-box">
+            <p>© 2025 Motion Notion. COPYRIGHT © ROBANG, FESTEJO & SOURCES. All rights reserved.</p>
+            <sources>
+                <p>Sources:</p>
+                <p>W3Schools.com. (n.d.). https://www.w3schools.com/</p>
+            </sources>
+        </div>
+    </a>
 </footer>
 
 </body>

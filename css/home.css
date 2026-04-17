@@ -95,25 +95,19 @@ p {
 }
 
 /* FOOTER */
-footer.bottom-box {
-    width: 100%;
-    background-color: #604c1c;
-    color: #f2e9d8;
-    text-align: center;
-    padding: 16px 0;
-    font-size: 16px;
-}
 
-footer.bottom-box {
-            background-color: #432715;
-            padding: 20px 30px;
-            text-align: center;
-            color: rgb(252, 242, 202);
-            border-radius: 10px;
-            max-width: 90%;
-            margin: 0 auto 40px auto;
-            line-height: 1.5;
-        }
+    
+.bottom-box { 
+    background-color: #432715; 
+    padding: 10px 0; 
+} 
+    
+.bottom-link { 
+    display: block; 
+    text-decoration: none; 
+    color: rgb(252, 242, 202);
+    font-size: 14px;
+} 
 
 /* NAVBAR active */
 .navbar a.active {
