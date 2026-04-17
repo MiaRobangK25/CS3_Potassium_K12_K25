@@ -146,12 +146,10 @@ body::before {
 }
 
 /* HEADINGS */
-h1 { 
-  font-family: "Arial", Verdana, Helvetica;
-  font-weight: 800;  
-  font-size: 90px;
-  color: white;
-  margin: 0 40px 20px 40px; 
+h1 {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto 20px auto;
 }
 
 /* PARAGRAPHS,, ? */
