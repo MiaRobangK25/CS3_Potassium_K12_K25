@@ -6,9 +6,9 @@ document.addEventListener("DOMContentLoaded", function() {
             const content = this.nextElementSibling;
             if (content && content.classList.contains("toggle-content")) {
                 if (content.style.maxHeight) {
-                    content.style.maxHeight = null; // close
+                    content.style.maxHeight = null; 
                 } else {
-                    content.style.maxHeight = content.scrollHeight + "px"; // open
+                    content.style.maxHeight = content.scrollHeight + "px"; // when its open yo!
                 }
             }
         });
