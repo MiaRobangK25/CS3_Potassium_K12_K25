@@ -42,6 +42,22 @@
         .argumentBox li {
             margin-bottom: 8px;
         }
+
+        .button {
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+            cursor: pointer;
+        }
+
+
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+
+        .button:active {
+            transform: scale(0.95);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
     </style>
 
 </head>
@@ -61,9 +77,12 @@
 </nav>
 
 <div class="content">
-    <h1>Case Analysis</h1>
 
     <br/>
+
+    <h1>Case Analysis</h1>
+    <p>This is the page where you can <b>analyze some cases of debate motions</b>. There's also a portion for a <b>QUICK DRILL</b> to build your own idea dump-- specifically for side opposition!</p>
+    <p>This isn't how we format arguments right away, since Pio & I [Mia] have a format we're most comfortable with. Instead, you'll answer questions that should help you understand <b>what happens when building an argument</b>.</p>
 
     <!-- MOTION 1 -->
     <table class="shadow">
