@@ -7,8 +7,113 @@
 
     <!-- MAIN EXTERNAL CSS -->
     <link rel="stylesheet" href="../css/externaldesigns.css">
-    <!-- PAGE 5 SPECIFIC CSS -->
-    <link rel="stylesheet" href="../css/page6-resources.css">
+    <!-- PAGE 5 CSS --> 
+
+    <style>
+h1 {
+    transform: translate(30px, 10px);
+    font-family: "Arial", Verdana, Helvetica;
+    font-size: 90px;
+    color: white;
+    padding: 0;
+    margin: 0;
+    line-height: 0.9;
+}
+
+h2 {
+    padding: 15px 20px;
+    margin: 20px 0 10px 40px;
+    background-color: rgba(96, 76, 28, 0.82);
+    color: rgb(235, 227, 187);
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background 0.3s;
+    font-family: "Arial", Verdana, Helvetica;
+}
+
+h2:hover {
+    background-color: #876b2e;
+}
+
+.toggle-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+    padding: 0 20px;
+}
+
+.toggle-content.show {
+    max-height: 1000px;
+    padding: 10px 20px;
+}
+
+.content {
+    width: auto;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 600px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+.links a {
+  text-decoration: none;
+  color: #ffebb0;
+  background-color: #603c22; 
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+  font-size: 25px; 
+  text-align: center; 
+  display: inline-block; 
+}
+
+.links a:hover {
+  background-color:  #805732;
+  transform: scale(1.05);
+  text-decoration: underline;
+}
+
+.video-links-container {
+    display: flex;
+    justify-content: center; 
+    margin: 10px 0;
+    
+}
+
+.video-link {
+    max-width: 100%; 
+    width: 560px;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 800px; 
+    height: auto;
+}
+
+.video-container iframe {
+    width: 100%; 
+    height: auto; 
+}
+
+.member-link {
+  display: block;
+  font-size: 20px;
+  color: #ffebb0;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+.member-link:hover {
+  text-decoration: underline;
+}
+    </style>
 
 </head>
 
@@ -50,20 +155,30 @@
             </p>
             <p>
                 Check out his BEGINNER SERIES!
+                <div class="links">
                 <a href="https://www.youtube.com/watch?v=SR2Ne-PTYZ4&list=PLaiFmuclVIJw4JLInJtTG4l2nhPiLDulw" target="_blank">Mikko Vitug </a>
+                </div>
             </p>
             <p>
                 Check out his CASE ANALYSIS from DIFFERENT MOTIONS!
+                <div class="links">
                 <a href="https://www.youtube.com/@luigialcaneses/videos" target="_blank">Luigi Alcaneses </a>
+                </div>
             </p>
             <p>
                 Check out the videos on these MATTERFILES ON DIFFERENT TOPICS! Basically, they will give you an overview or summary of what is currently hapening in that are/topic (eg. Art).
+                <div class="links">
+                <br/>
                 <a href="https://www.youtube.com/@DigitalMatterFiles" target="_blank">Luigi Alcaneses </a>
+                <br/>
                 <a href="https://www.youtube.com/@ryanlafferty8102/videos" target="_blank">Ryan Lafferty</a>
+                </div>
             </p>
             <p>
                 Check out the channel, here for debate recordings! The motion, teams, and who won are in the description. Currently, still finding a suggestion for Asian Parliamentary! 
+                <div class="links">
                 <a href="https://www.youtube.com/watch?v=ls4ReSzO_VI" target="_blank">British Parliamentary Suggestion</a>
+                </div>
             </p>
         </div>
         <!-- adjust css oml -->
@@ -77,17 +192,23 @@
                 provide large databases of past debate motions and competition statistics.
                 These archives can be used for <i>extra practice</i> or <i>brainstorming cases</i>.
 
+                <div class="links">
                 <a href="https://debatedata.io/?dateFrom=1981&dateTo=2026" target="_blank"> Main Motions Reserve</a>
+                </div>
             </p>
 
             <p>
                 Use these statistics and motions as a reference for BRITISH PARLIAMENTARY! 
+                <div class="links">
                 <a href="https://psdc2026.calicotab.com/psdc2026/motions/statistics/" target="_blank"> British Parliamentary Sample Motions</a>
+                </div>
             </p>
 
             <p>
-                Use these statistics and motions as a reference for ASIAN PARLIAMENTARY! 
+                Use these statistics and motions as a reference for ASIAN PARLIAMENTARY!
+                <div class="links"> 
                 <a href="https://nashdc2024.calicotab.com/nashdc2024/motions/statistics/" target="_blank"> Asian Parliamentary Sample Motions</a>
+                </div>
             </p>
 
         </div>
@@ -105,24 +226,28 @@
 
             <p>
                 If you want someone to explain how the 1st Speaker Position works, here is a lecture by Ben Bensali– a Philippine Debater!
-                <a href="https://www.youtube.com/watch?v=q4Cti4zMujw&list=PLWusynXgGaEj3_Q1Da1r-4NEM70f1jNA9&index=2" target="_blank"> 1st Speaker (PRIME MINISTER/LEADER OF OPPOSITION) </a>
+                <div class="video-links-container">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/q4Cti4zMujw" title="1st Speaker (PRIME MINISTER/LEADER OF OPPOSITION)" frameborder="0" allowfullscreen width="800" height="450"></iframe>
+                </div>
+                </div>
             </p>
 
             <p>
-                As for the 2nd Speaker (Deputy) Position, here’s a video from my GOAT– and our very own PSHS-MC graduate, Rivaldo Aquino! Please watch this video, Kuya Riv is cool… 
-                <a href="https://www.youtube.com/watch?v=QA7BqmoeL1Y&list=PLWusynXgGaEgHkA5Wa3EqDSfPe8FjVyJk" target="_blank"> 2nd Speaker (DEPUTIES) </a>
-            </p>
+                As for the 2nd Speaker (Deputy) Position, here’s a video from my GOAT– and our very own PSHS-MC graduate, Rivaldo Aquino! Please watch this video, Kuya Riv is cool… This is also similar to MEMBER SPEECHES, as they have the same purpose!
+                <div class="video-links-container">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/QA7BqmoeL1Y" title="2nd Speaker (DEPUTIES)" frameborder="0" allowfullscreen width="800" height="450"></iframe>
+                </div>
+                </div>
 
             <p>
                 Lastly, you may refer to this for the 3rd Speaker Positions, for whips! This is also from a Philippine Debater! 
-                <a href="https://www.youtube.com/watch?v=7cmQsVWJpNA&list=PLWusynXgGaEhgS0AS-1-kagR75U1M29X8&index=2
-                " target="_blank"> 3rd Speaker (WHIPS) </a>
-            </p>
-
-            <p>
-                The earlier 3 links were mainly for Asian Parliamentary, but they also apply to British Parliamentary! The only change is the addition of 
-                Member speakers, which you can refer to in the video below.
-                <a href="https://www.youtube.com/watch?v=JobCI3It7k8&t=74s" target="_blank"> Member Speakers (BRITISH PARLIAMENTARY) </a>
+                <div class="video-links-container">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/7cmQsVWJpNA" title="3rd Speaker (WHIPS)" frameborder="0" allowfullscreen width="800" height="450"></iframe>
+                </div>
+                </div>
             </p>
 
         </div>

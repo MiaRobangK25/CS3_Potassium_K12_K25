@@ -4,6 +4,7 @@ body {
     padding-top: 60px;
     font-family: Arial, sans-serif;
     position: relative;
+    font-size: 25px;
 }
 
 body::before {
